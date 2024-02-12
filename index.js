@@ -23,7 +23,7 @@ pfServer.use(router)
 pfServer.use('/uploads',express.static('./uploads'))
 
 //set port number
-const PORT = 3000
+const PORT = 3000 || process.env.PORT
 
 //hosting server
 pfServer.listen(PORT,()=>{
